@@ -137,12 +137,11 @@ function Search() {
             width={{ xs: 1, md: "calc(100% - 384px)" }} 
             mr={{ md: '24px' }}
           >
-            {/* isLoading ? (
-              <Typography variant="h3" sx={{ bgcolor: "#fff", p: 3, borderRadius: 2 }}>
+            {isLoading ? (
+              <Typography variant="h4" sx={{ bgcolor: "#fff", p: 3, borderRadius: 2 }}>
                 Loading...
               </Typography>
-            ) : */}
-            { hospitals.length > 0 ? (
+            ) : hospitals.length > 0 ? (
               filteredHospitals.length > 0 ? (
                 filteredHospitals.map((hospital) => (
                   <HospitalCard
