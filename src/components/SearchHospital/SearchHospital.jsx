@@ -70,7 +70,7 @@ export default function SearchHospital() {
         flexDirection: { xs: "column", md: "row" },
       }}
     >
-      <div id="state">
+
       <Select
         displayEmpty
         id="state"
@@ -94,9 +94,7 @@ export default function SearchHospital() {
           </MenuItem>
         ))}
       </Select>
-      </div>
 
-      <div id="city">
       <Select
         displayEmpty
         id="city"
@@ -120,7 +118,6 @@ export default function SearchHospital() {
           </MenuItem>
         ))}
       </Select>
-      </div>
 
       <Button
         type="submit"
